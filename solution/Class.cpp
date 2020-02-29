@@ -1,8 +1,12 @@
-/* Link to the problem: https://www.hackerrank.com/challenges/c-tutorial-class/problem /*
+/* Link to the problem: https://www.hackerrank.com/challenges/c-tutorial-class/problem */
 
 #include <iostream>
 #include <sstream>
-using namespace std;
+ 
+using std::string;
+using std::cin;
+using std::cout;
+using std::stringstream;
 
 class Student{
 
@@ -35,14 +39,16 @@ public:
     {
         last_name = newLast_name;
     }
+    
     int get_age() {return age;}
     int get_standard() {return standard;}
+    
     string get_first_name() {return first_name;}
     string get_last_name() {return last_name;}
     
     string to_string()
     {
-        stringstream ss;
+        std::stringstream ss;
         char c = ',';
         ss << age << c << first_name << c << last_name << c << standard;
         return ss.str();
