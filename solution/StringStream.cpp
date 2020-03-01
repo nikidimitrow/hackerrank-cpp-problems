@@ -21,6 +21,7 @@ using std::string;
 using std::cout;
 using std::cin;
 
+//beter is to be use std::string_view instead of references, but hackerrank don't support c++17
 vector<int> parseInts(string& str) {
     stringstream ss(str);
 	vector<int> vectorOfIntegers;
