@@ -21,7 +21,7 @@ using std::string;
 using std::cout;
 using std::cin;
 
-vector<int> parseInts(string str) {
+vector<int> parseInts(string& str) {
     stringstream ss(str);
 	vector<int> vectorOfIntegers;
     int variableToStoreStr{};
